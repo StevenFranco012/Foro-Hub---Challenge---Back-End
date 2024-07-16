@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.7</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.alura</groupId>
+	<artifactId>literatura</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>literatura</name>
+	<description>Descripción del Proyecto Tecnologías: Java Spring PostgreSQL Descripción General: Este proyecto se centrará en el desarrollo de una aplicación backend utilizando Java, el framework Spring y la base de datos PostgreSQL. La aplicación se integrará con la API de Gutendex (gutendex.com), una API de libros que permite buscar y recuperar información sobre libros disponibles en el dominio público.  Objetivo: El objetivo de este proyecto es crear una aplicación de consola que permita a los usuarios buscar libros por su título, almacenar los resultados de las búsquedas en una base de datos PostgreSQL y gestionar la información de los libros de manera eficiente.  Funcionalidades: Buscar libro por título:  La persona usuaria ingresa el título del libro que desea buscar. La aplicación se conecta a la API de Gutendex y realiza la búsqueda. Los resultados de la búsqueda se almacenan en la base de datos PostgreSQL. Se muestran los resultados en la consola. Almacenar resultados:  Los libros encontrados en la búsqueda se guardarán en la base de datos PostgreSQL. La base de datos gestionará la información de los libros, como título, autor, y cualquier otro dato relevante. Interacción con la base de datos:  Utilizar Spring Data JPA para interactuar con la base de datos PostgreSQL. Realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los datos almacenados. Conexión a la API de Gutendex:  Implementar servicios en Java para conectar y consumir la API de Gutendex. Manejar las respuestas de la API y transformarlas en objetos manejables por la aplicación. Aplicación de consola:  La aplicación será exclusivamente de consola, por lo que no se desarrollará un frontend. La interacción con el usuario se realizará a través de la línea de comandos. Ejemplo de Uso: La persona usuaria inicia la aplicación desde la consola. Se solicita al usuario ingresar el título del libro que desea buscar (por ejemplo, &quot;Pride&quot;). La aplicación realiza la búsqueda en la API de Gutendex. Los resultados de la búsqueda se almacenan en la base de datos y se muestran en la consola. Beneficios: Facilitar la búsqueda y almacenamiento de libros del dominio público. Proporcionar una estructura backend robusta y eficiente utilizando tecnologías modernas. Ofrecer una aplicación simple pero funcional que permita gestionar información de libros sin necesidad de un frontend. Este proyecto no solo ayudará a familiarizarse con tecnologías clave como Java, Spring y PostgreSQL, sino que también proporcionará una solución práctica para la búsqueda y gestión de libros utilizando una API externa.</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.16.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.theokanning.openai-gpt3-java</groupId>
+			<artifactId>service</artifactId>
+			<version>0.14.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
